@@ -96,11 +96,11 @@ This app was created out of a desire to help others turn their aspirations into 
 
 ## Attributions / Credit
 
-**Fonts**
+**Fonts:**
 
 - https://fonts.google.com/specimen/Afacad+Flux
 
-**Icons**
+**Icons:**
 
 - https://fonts.google.com/icons?preview.text=YoloLog&categoryFilters=Sans+Serif:%2FSans%2FGeometric&selected=Material+Symbols+Outlined:box_add:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=box&icon.size=24&icon.color=%235f6368
 
@@ -112,4 +112,4 @@ This app was created out of a desire to help others turn their aspirations into 
 
 - https://unsplash.com/photos/person-skydiving-on-air-during-daytime-R11bppS4q8o
 
-**Code References and Inspiration**
+**Code References and Inspiration:**
