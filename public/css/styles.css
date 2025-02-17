@@ -1,0 +1,275 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Afacad Flux", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Signup Styling */
+.auth-container {
+  display: grid;
+  grid-template-columns: 3fr 9fr; /*fr = frames or fractional units*/
+  height: 100vh; /*vh = viewport height */
+}
+
+.signin-image-section {
+  background-image: url("../images/signin.jpg");
+}
+
+.signup-image-section {
+  background-image: url("../images/signup.jpg");
+}
+
+.signin-image-section,
+.signup-image-section {
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
+}
+
+/* Input Fields */
+.form-input {
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+}
+
+/* Removes the up and down arrows from number field inputs */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Buttons */
+.btn {
+  cursor: pointer;
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+a.btn {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #094f9a;
+  color: white;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #4a4f54;
+  color: white;
+  border: none;
+}
+
+/* Margins */
+/* m = margin, mt = margin top, mb = margin bottom, mx = left and right (x-axis), my = top and bottom (y-axis) */
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.m-6 {
+  margin: 1.5rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+/* Margin Top */
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+/* Margin Bottom */
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Left & Right Margin */
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Right Margin */
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+/* Top & Bottom Margin */
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Display */
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Flexbox classes */
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Fonts */
+.font-xl {
+  font-size: 1.5rem;
+}
+
+.font-lg {
+  font-size: 1.25rem;
+}
+
+/* Colors */
+.text-white {
+  color: white;
+}
+
+.bg-primary {
+  background-color: #094f9a;
+}
+
+.border-bottom {
+  border-bottom: 1px solid black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Bucket List Page Styling */
+.header a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo-section img {
+  width: 32px;
+  height: 32px;
+}
+
+.center-section {
+  min-height: 80vh;
+}
+
+.center-section a {
+  align-content: center;
+}
+
+.center-section img {
+  width: 200px;
+}
+
+/* Dashboard Table Styling */
+.table-header {
+  background-color: #094f9a;
+  color: white;
+}
+
+.table-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.table-header .table-cell {
+  font-weight: bold;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.table-row .table-cell {
+  padding: 8px;
+  font-size: 1.25rem;
+}
+
+.table-body .table-cell {
+  border: 1px solid rgb(223, 223, 223);
+}
+
+.table-cell a {
+  text-decoration: none;
+}
+
+.table-cell button {
+  background-color: transparent;
+  border: none;
+}

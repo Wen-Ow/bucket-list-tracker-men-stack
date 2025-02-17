@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a New Item to Your Bucket List</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="header flex justify-between m-6">
+      <div class="logo-section flex">
+        <img src="/images/homeicn.png" class="mr-2" alt="Home icon" />
+        <h2>YoloLog</h2>
+      </div>
+      <a href="/signout" class="font-xl">Sign Out</a>
+    </div>
+    <div class="border-bottom m-6">
+      <h2>Add a New Item to Your Bucket List</h2>
+    </div>
+
+    <form action="/bucketList" method="POST">
+      <div class="grid grid-cols-3 m-6">
+        <div>
+          <label for="title" class="block">Title:</label>
+          <input
+            type="text"
+            class="form-input"
+            id="title"
+            name="title"
+            required
+          />
+        </div>
+        <div>
+          <label for="category" class="block">Category:</label>
+          <select id="category" class="form-input" name="category" required>
+            <option value="goals">Goals</option>
+            <option value="travel">Travel</option>
+            <option value="movies">Movies</option>
+            <option value="music">Music</option>
+            <option value="food">Food</option>
+            <option value="games">Games</option>
+            <option value="sports">Sports</option>
+            <option value="books">Books</option>
+            <option value="hobbies">Hobbies</option>
+            <option value="events">Events</option>
+            <option value="education">Education</option>
+            <option value="experience">Experience</option>
+            <option value="skill">Skill</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="priority" class="block">Priority:</label>
+          <select id="priority" class="form-input" name="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+        <div>
+          <label for="targetDate" class="block">Target Date:</label>
+          <input
+            type="date"
+            class="form-input"
+            id="targetDate"
+            name="targetDate"
+          />
+        </div>
+        <div>
+          <label for="budget" class="block">Budget:</label>
+          <input
+            type="number"
+            class="form-input"
+            id="budget"
+            name="budget"
+            min="0"
+            step="0.01"
+          />
+        </div>
+        <div>
+          <label for="status" class="block">Status:</label>
+          <select id="status" class="form-input" name="status">
+            <option value="not started">Not Started</option>
+            <option value="in progress">In Progress</option>
+            <option value="completed">Completed</option>
+            <option value="on hold">On Hold</option>
+            <option value="cancelled">Cancelled</option>
+          </select>
+        </div>
+      </div>
+      <div class="m-6">
+        <label for="description" class="block">Description:</label>
+        <textarea
+          id="description"
+          class="form-input"
+          name="description"
+        ></textarea>
+      </div>
+
+      <div class="flex justify-end form-footer m-6">
+        <a
+          class="btn btn-secondary align-content-center mx-4"
+          href="/bucketList"
+          >Cancel</a
+        >
+        <button type="submit" class="btn btn-primary mx-4">Save</button>
+      </div>
+    </form>
+  </body>
+</html>

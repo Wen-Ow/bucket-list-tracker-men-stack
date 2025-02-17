@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YoloLog - Sign Up</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- 2 Col Layout -->
+    <div class="auth-container">
+      <!-- Left Column Starts Here -->
+      <div class="mx-4 my-8">
+        <h1 class="text-center">Create an Account</h1>
+        <div class="flex flex-col align-center">
+          <form action="/signUp" method="POST">
+            <div>
+              <label for="username" class="block">Username:</label>
+              <input
+                type="text"
+                id="username"
+                class="form-input"
+                name="username"
+                placeholder="Username"
+                required
+              />
+            </div>
+            <div>
+              <label for="password" class="block">Password:</label>
+              <input
+                type="password"
+                class="form-input"
+                id="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Sign Up</button>
+            <p class="font-xl mt-12 mb-4">Already have an account?</p>
+            <a href="/signIn"
+              ><button type="button" class="btn btn-primary">Login</button></a
+            >
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Column Starts Here-->
+      <div
+        class="signup-image-section"
+        aria-label="YoloLog title with an image of a women walking on a nice trail."
+      >
+        <div class="flex flex-col align-center">
+          <h2 class="text-white" style="font-size: 3rem">YoloLog</h2>
+          <p class="text-white" style="font-size: 2rem">
+            Choose and Manage Your Bucket List
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
