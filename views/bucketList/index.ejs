@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YoloLog - Bucket List Tracker</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="border-bottom flex justify-between m-6">
+      <div class="logo-section flex">
+        <img src="/images/homeicn.png" class="mr-2" alt="Home icon" />
+        <h2>YoloLog</h2>
+      </div>
+      <a href="/signout" class="font-xl">Sign Out</a>
+    </div>
+
+    <div class="container m-6">
+      <!-- if items are 0-->
+      <% if (items.length === 0) { %>
+      <h1>Welcome, <%= user.username %></h1>
+      <!-- Middle section -->
+      <div class="center-section flex flex-col align-center justify-center">
+        <img src="/images/boxicn.png" alt="Empty state bucket icon" />
+        <a href="/bucketList/new" class="btn btn-primary mt-4"
+          >Create New Bucket</a
+        >
+        <p class="mt-4 font-xl">
+          Create goals you want to achieve in life. Organize goals in lists or
+          plan new trips. Anything.
+        </p>
+      </div>
+      <% } else { %>
+      <div class="flex justify-between">
+        <h1>My Bucket Dashboard</h1>
+        <a href="/bucketList/new" class="btn btn-primary align-content-center"
+          >Add Item</a
+        >
+      </div>
+      <!-- Table using divs start here -->
+      <div class="table mt-8">
+        <div class="table-header">
+          <div class="table-row">
+            <div class="table-cell">Title</div>
+            <div class="table-cell">Description</div>
+            <div class="table-cell">Category</div>
+            <div class="table-cell">Priority</div>
+            <div class="table-cell">Target Date</div>
+            <div class="table-cell">Budget</div>
+            <div class="table-cell">Actions</div>
+          </div>
+        </div>
+        <div class="table-body">
+          <% items.forEach((item) => { %>
+          <div class="table-row">
+            <div class="table-cell"><%= item.title %></div>
+            <div class="table-cell"><%= item.description %></div>
+            <div class="table-cell"><%= item.category %></div>
+            <div class="table-cell"><%= item.priority %></div>
+            <div class="table-cell">
+              <%= item.targetDate ? item.targetDate.toISOString().split('T')[0]
+              : 'N/A' %>
+            </div>
+            <div class="table-cell"><%= item.budget %></div>
+            <div class="table-cell">
+              <a href="/bucketList/<%= item._id %>">
+                <img src="/images/viewicn.svg" alt="View icon" />
+              </a>
+              <a href="/bucketList/<%= item._id %>/edit">
+                <img src="/images/editicn.svg" alt="Edit icon" />
+              </a>
+              <form
+                action="/bucketList/<%= item._id %>?_method=DELETE"
+                method="POST"
+                style="display: inline"
+              >
+                <button type="submit" class="">
+                  <img src="/images/deleteicn.svg" alt="Delete icon" />
+                </button>
+              </form>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+      <% } %>
+    </div>
+  </body>
+</html>
