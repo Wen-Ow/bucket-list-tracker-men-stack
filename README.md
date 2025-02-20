@@ -2,7 +2,7 @@
 
 **Created By: Wen Ow**
 
-**Date: February 22, 2025**
+**Date: February 25, 2025**
 
 **Images of the Application**
 
@@ -113,3 +113,27 @@ This app was created out of a desire to help others turn their aspirations into 
 - https://unsplash.com/photos/person-skydiving-on-air-during-daytime-R11bppS4q8o
 
 **Code References and Inspiration:**
+
+- https://generalassembly.instructure.com/courses/633/modules
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
+
+**CSS References:**
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/font-optical-sizing
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-inner-spin-button
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/margin
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout
+
+- https://www.w3schools.com/css/css3_buttons.asp
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align

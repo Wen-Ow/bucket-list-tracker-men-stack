@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Includes padding and border within the element's width and height */
   margin: 0;
   padding: 0;
 }
@@ -49,7 +49,7 @@ body {
   width: 250px;
 }
 
-/* Removes the up and down arrows from number field inputs */
+/* Removes the default up and down arrows from number input fields in WebKit browsers such as Chrome and Safari */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -82,7 +82,7 @@ a.btn {
   border: none;
 }
 
-/* Margins */
+/* Utility Classes for Margins */
 /* m = margin, mt = margin top, mb = margin bottom, mx = left and right (x-axis), my = top and bottom (y-axis) */
 .m-2 {
   margin: 0.5rem;
@@ -144,7 +144,7 @@ a.btn {
   margin-bottom: 2rem;
 }
 
-/* Display */
+/* Display and Layout Classes */
 .block {
   display: block;
 }
@@ -161,7 +161,7 @@ a.btn {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* Flexbox classes */
+/* Flexbox Utilties */
 .flex-col {
   flex-direction: column;
 }
