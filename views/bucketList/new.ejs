@@ -21,7 +21,7 @@
     <form action="/bucketList" method="POST">
       <div class="grid grid-cols-3 m-6">
         <div>
-          <label for="title" class="block">Title:</label>
+          <label for="title" class="block bold font-lg">Title:</label>
           <input
             type="text"
             class="form-input"
@@ -31,7 +31,7 @@
           />
         </div>
         <div>
-          <label for="category" class="block">Category:</label>
+          <label for="category" class="block bold font-lg">Category:</label>
           <select id="category" class="form-input" name="category" required>
             <option value="goals">Goals</option>
             <option value="travel">Travel</option>
@@ -50,7 +50,7 @@
           </select>
         </div>
         <div>
-          <label for="priority" class="block">Priority:</label>
+          <label for="priority" class="block bold font-lg">Priority:</label>
           <select id="priority" class="form-input" name="priority">
             <option value="low">Low</option>
             <option value="medium">Medium</option>
@@ -58,7 +58,9 @@
           </select>
         </div>
         <div>
-          <label for="targetDate" class="block">Target Date:</label>
+          <label for="targetDate" class="block bold font-lg"
+            >Target Date:</label
+          >
           <input
             type="date"
             class="form-input"
@@ -67,7 +69,7 @@
           />
         </div>
         <div>
-          <label for="budget" class="block">Budget:</label>
+          <label for="budget" class="block bold font-lg">Budget:</label>
           <input
             type="number"
             class="form-input"
@@ -78,7 +80,7 @@
           />
         </div>
         <div>
-          <label for="status" class="block">Status:</label>
+          <label for="status" class="block bold font-lg">Status:</label>
           <select id="status" class="form-input" name="status">
             <option value="not started">Not Started</option>
             <option value="in progress">In Progress</option>
@@ -89,7 +91,7 @@
         </div>
       </div>
       <div class="m-6">
-        <label for="description" class="block">Description:</label>
+        <label for="description" class="block bold font-lg">Description:</label>
         <textarea
           id="description"
           class="form-input"

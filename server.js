@@ -26,7 +26,7 @@ app.use(methodOverride("_method")); // Enables PUT and DELETE requests
 app.use(express.static("public")); // Serve static files from the public directory (i.e. CSS, JS, images)
 app.use(
   session({
-    secret: process.env.SESSION_SECRET || "yoloSecret", // Secret key for signing the session ID cookie
+    secret: process.env.SESSION_SECRET || "yolosecretlog", // Secret key for signing the session ID cookie
     resave: false, // Don't save session if unmodified
     saveUninitialized: false, // Don't save uninitialized sessions
     store: MongoStore.create({ mongoUrl: process.env.MONGODB_URI }), // Store sessions in MongoDB
