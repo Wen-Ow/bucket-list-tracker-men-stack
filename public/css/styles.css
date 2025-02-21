@@ -273,3 +273,39 @@ a.btn {
   background-color: transparent;
   border: none;
 }
+
+/* Tooltip Container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem; /* Ensure all the tooltips have the same font size */
+}
+
+/* Tooltip Text */
+.tooltip::after {
+  content: attr(
+    data-tooltip
+  ); /* Get the text from the data-tooltip attribute */
+  position: absolute;
+  bottom: 100%; /* Position above the icon */
+  left: 50%; /* Center the tooltip */
+  transform: translateX(-50%); /* Center the tooltip */
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 1rem; /* Font size for the tooltip */
+  white-space: nowrap; /* Prevent text wrapping */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  pointer-events: none; /* Prevent hover flicker */
+}
+
+/* Show the tooltip on hover */
+.tooltip:hover::after,
+.tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}

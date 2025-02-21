@@ -64,10 +64,18 @@
             </div>
             <div class="table-cell"><%= item.budget %></div>
             <div class="table-cell">
-              <a href="/bucketList/<%= item._id %>">
+              <a
+                href="/bucketList/<%= item._id %>"
+                class="tooltip tooltiptext"
+                data-tooltip="View Details"
+              >
                 <img src="/images/viewicn.svg" alt="View icon" />
               </a>
-              <a href="/bucketList/<%= item._id %>/edit">
+              <a
+                href="/bucketList/<%= item._id %>/edit"
+                class="tooltip tooltiptext"
+                data-tooltip="Edit Item"
+              >
                 <img src="/images/editicn.svg" alt="Edit icon" />
               </a>
               <form
@@ -75,7 +83,11 @@
                 method="POST"
                 style="display: inline"
               >
-                <button type="submit" class="">
+                <button
+                  type="submit"
+                  class="tooltip tooltiptext"
+                  data-tooltip="Delete Item"
+                >
                   <img src="/images/deleteicn.svg" alt="Delete icon" />
                 </button>
               </form>
