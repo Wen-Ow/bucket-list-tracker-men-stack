@@ -7,28 +7,13 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <div class="header flex justify-between m-6">
-      <div class="logo-section flex">
-        <img src="/images/homeicn.png" class="mr-2" alt="Home icon" />
-        <h2>YoloLog</h2>
-      </div>
-      <a href="/signout" class="font-xl">Sign Out</a>
-    </div>
-    <div class="border-bottom m-6">
-      <h2>Add a New Item to Your Bucket List</h2>
-    </div>
-
+    <%- include('../partials/header') %>
+    <h2 class="m-6">Add a New Item to Your Bucket List</h2>
     <form action="/bucketList" method="POST">
       <div class="grid grid-cols-3 m-6">
         <div>
           <label for="title" class="block bold font-lg">Title:</label>
-          <input
-            type="text"
-            class="form-input"
-            id="title"
-            name="title"
-            required
-          />
+          <input type="text" class="form-input" id="title" name="title" required />
         </div>
         <div>
           <label for="category" class="block bold font-lg">Category:</label>
@@ -58,26 +43,12 @@
           </select>
         </div>
         <div>
-          <label for="targetDate" class="block bold font-lg"
-            >Target Date:</label
-          >
-          <input
-            type="date"
-            class="form-input"
-            id="targetDate"
-            name="targetDate"
-          />
+          <label for="targetDate" class="block bold font-lg">Target Date:</label>
+          <input type="date" class="form-input" id="targetDate" name="targetDate" />
         </div>
         <div>
           <label for="budget" class="block bold font-lg">Budget:</label>
-          <input
-            type="number"
-            class="form-input"
-            id="budget"
-            name="budget"
-            min="0"
-            step="0.01"
-          />
+          <input type="number" class="form-input" id="budget" name="budget" min="0" step="0.01" />
         </div>
         <div>
           <label for="status" class="block bold font-lg">Status:</label>
@@ -92,19 +63,10 @@
       </div>
       <div class="m-6">
         <label for="description" class="block bold font-lg">Description:</label>
-        <textarea
-          id="description"
-          class="form-input"
-          name="description"
-        ></textarea>
+        <textarea id="description" class="form-input" name="description"></textarea>
       </div>
-
       <div class="flex justify-end form-footer m-6">
-        <a
-          class="btn btn-secondary align-content-center mx-4"
-          href="/bucketList"
-          >Cancel</a
-        >
+        <a class="btn btn-secondary align-content-center mx-4" href="/bucketList">Cancel</a>
         <button type="submit" class="btn btn-primary mx-4">Save</button>
       </div>
     </form>

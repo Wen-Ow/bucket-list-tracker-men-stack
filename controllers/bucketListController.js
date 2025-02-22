@@ -1,39 +1,42 @@
 const BucketListItem = require("../models/bucketListItem");
+const User = require("../models/user");
 
-// I. (Index) - Show all bucket list items
-exports.getAllItems = async (req, res) => {
+// I = Index - Method to display all bucket list items
+const bucketList = async (req, res) => {
   try {
-    const items = await BucketListItem.find({ user: req.session.userId }); // Fetch items for the logged-in user
-    res.render("bucketList/index", { bucketListItems: items });
+    const items = await BucketListItem.find({ user: req.session.userId }); // Find items for the logged-in user
+    const user = await User.findById(req.session.userId); // Find the user
+    res.render("bucketList/index", { items, user });
   } catch (error) {
     res.status(500).send("Error retrieving bucket list items.");
   }
 };
 
-// N. (New) - Show form to create a new item
-exports.showNewForm = (req, res) => {
+// N = New - Method to show the form to create a new bucket list item
+const createBucketListItemPage = (req, res) => {
   res.render("bucketList/new");
 };
 
-// D. (Delete) - Delete a bucket list item
-exports.deleteItem = async (req, res) => {
+// D = Delete - Method to delete a specific bucket list item
+const deleteBucketListItem = async (req, res) => {
   try {
     await BucketListItem.findOneAndDelete({
       _id: req.params.id,
       user: req.session.userId,
-    });
+    }); // Ensure only the owner can delete it
     res.redirect("/bucketList");
   } catch (error) {
     res.status(500).send("Error deleting bucket list item.");
   }
 };
 
-// U. (Update) - Update an existing bucket list item
-exports.updateItem = async (req, res) => {
+// U = Update - Method to update a specific bucket list item
+const updateBucketListItem = async (req, res) => {
   try {
     await BucketListItem.findOneAndUpdate(
-      { _id: req.params.id, user: req.session.userId },
-      req.body
+      // Ensure only the owner can update it
+      { _id: req.params.id, user: req.session.userId }, // Find the item
+      req.body // Update the item
     );
     res.redirect("/bucketList");
   } catch (error) {
@@ -41,8 +44,8 @@ exports.updateItem = async (req, res) => {
   }
 };
 
-// C. (Create) - Create a new bucket list item
-exports.createItem = async (req, res) => {
+// C = Create - Method to handle creating a new bucket list item
+const createBucketListItem = async (req, res) => {
   try {
     await BucketListItem.create({ ...req.body, user: req.session.userId });
     res.redirect("/bucketList");
@@ -51,30 +54,42 @@ exports.createItem = async (req, res) => {
   }
 };
 
-// E. (Edit) - Show form to edit an existing item
-exports.showEditForm = async (req, res) => {
+// E = Edit - Method to show the form to edit an existing bucket list item
+const updateBucketListItemPage = async (req, res) => {
   try {
     const item = await BucketListItem.findOne({
+      // Ensure only the owner can edit it
       _id: req.params.id,
       user: req.session.userId,
     });
-    if (!item) return res.status(404).send("Item not found.");
-    res.render("bucketList/edit", { bucketListItem: item });
+    if (!item) return res.status(404).send("Item not found."); // Handle not found
+    res.render("bucketList/edit", { item });
   } catch (error) {
     res.status(500).send("Error retrieving the item for editing.");
   }
 };
 
-// S. (Show) - Show details of a specific item
-exports.getItemById = async (req, res) => {
+// S = Show - Method to display details of a specific bucket list item
+const showBucketListItem = async (req, res) => {
   try {
     const item = await BucketListItem.findOne({
+      // Ensure only the owner can view it
       _id: req.params.id,
       user: req.session.userId,
     });
     if (!item) return res.status(404).send("Item not found.");
-    res.render("bucketList/show", { bucketListItem: item });
+    res.render("bucketList/show", { item });
   } catch (error) {
     res.status(500).send("Error retrieving the item.");
   }
+};
+
+module.exports = {
+  bucketList,
+  createBucketListItem,
+  createBucketListItemPage,
+  deleteBucketListItem,
+  showBucketListItem,
+  updateBucketListItem,
+  updateBucketListItemPage,
 };

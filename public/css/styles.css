@@ -149,10 +149,6 @@ a.btn {
   display: block;
 }
 
-.flex {
-  display: flex;
-}
-
 .grid {
   display: grid;
 }
@@ -162,6 +158,10 @@ a.btn {
 }
 
 /* Flexbox Utilties */
+.flex {
+  display: flex;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -248,7 +248,7 @@ a.btn {
 .table-row {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr; /* 8 columns inside my table */
 }
 
 .table-header .table-cell {
