@@ -49,6 +49,11 @@ body {
   width: 250px;
 }
 
+.form-input:focus {
+  outline: 2px solid #094f9a;
+  border: 2px solid #094f9a;
+}
+
 /* Removes the default up and down arrows from number input fields in WebKit browsers such as Chrome and Safari */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -73,13 +78,27 @@ a.btn {
 .btn-primary {
   background-color: #094f9a;
   color: white;
-  border: none;
+  border: 1px solid #094f9a;
+  transition: all 0.4s ease;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  border: 1px solid #094f9a;
+  color: #094f9a;
 }
 
 .btn-secondary {
   background-color: #4a4f54;
   color: white;
-  border: none;
+  border: 1px solid #4a4f54;
+  transition: all 0.4s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #fff;
+  border: 1px solid #4a4f54;
+  color: #4a4f54;
 }
 
 /* Utility Classes for Margins */
@@ -191,6 +210,22 @@ a.btn {
 }
 
 /* Fonts */
+.font-5xl {
+  font-size: 4rem;
+}
+
+.font-4xl {
+  font-size: 3rem;
+}
+
+.font-3xl {
+  font-size: 2.5rem;
+}
+
+.font-xxl {
+  font-size: 2rem;
+}
+
 .font-xl {
   font-size: 1.5rem;
 }
@@ -204,22 +239,39 @@ a.btn {
   color: white;
 }
 
+.text-primary {
+  color: #094f9a;
+}
+
 .bg-primary {
   background-color: #094f9a;
 }
 
+.bg-gradient {
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
 .border-bottom {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #dfdfdf;
 }
 
 .bold {
   font-weight: bold;
 }
 
+/* Heights */
+.h-100 {
+  height: 100vh;
+}
+
 /* Bucket List Page Styling */
 .header a {
   text-decoration: none;
   color: black;
+}
+
+.header a:hover {
+  text-decoration: underline;
 }
 
 .logo-section img {
@@ -284,9 +336,7 @@ a.btn {
 
 /* Tooltip Text */
 .tooltip::after {
-  content: attr(
-    data-tooltip
-  ); /* Get the text from the data-tooltip attribute */
+  content: attr(data-tooltip); /* Get the text from the data-tooltip attribute */
   position: absolute;
   bottom: 100%; /* Position above the icon */
   left: 50%; /* Center the tooltip */

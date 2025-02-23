@@ -104,7 +104,13 @@ This app was created out of a desire to help others turn their aspirations into 
 
 - https://fonts.google.com/icons?preview.text=YoloLog&categoryFilters=Sans+Serif:%2FSans%2FGeometric&selected=Material+Symbols+Outlined:box_add:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=box&icon.size=24&icon.color=%235f6368
 
-- https://fonts.google.com/icons?preview.text=YoloLog&categoryFilters=Sans+Serif:%2FSans%2FGeometric&selected=Material+Symbols+Outlined:box_add:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=box&icon.size=24&icon.color=%235f6368
+- https://fonts.google.com/icons?preview.text=YoloLog&categoryFilters=Sans+Serif:%2FSans%2FGeometric&selected=Material+Symbols+Outlined:edit:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=edit&icon.size=24&icon.color=%235f6368
+
+- https://fonts.google.com/icons?preview.text=YoloLog&categoryFilters=Sans+Serif:%2FSans%2FGeometric&selected=Material+Symbols+Outlined:visibility:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=view&icon.size=24&icon.color=%235f6368
+
+- https://fonts.google.com/icons?preview.text=YoloLog&categoryFilters=Sans+Serif:%2FSans%2FGeometric&selected=Material+Symbols+Outlined:delete:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=delete&icon.size=24&icon.color=%235f6368
+
+- https://fonts.google.com/icons?preview.text=YoloLog&categoryFilters=Sans+Serif:%2FSans%2FGeometric&selected=Material+Symbols+Outlined:cleaning_bucket:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=bucket&icon.size=24&icon.color=%235f6368
 
 **Images / Art:**
 
@@ -139,4 +145,3 @@ This app was created out of a desire to help others turn their aspirations into 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
 
 - https://www.w3schools.com/css/css_tooltip.asp
-

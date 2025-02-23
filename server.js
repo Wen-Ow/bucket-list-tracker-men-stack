@@ -33,12 +33,8 @@ app.use(
   })
 );
 
-// ---- Custom Middleware for Protecting Routes ---- //
-const isAuthenticated = (req, res, next) => {
-  // Ensures only authenticated users can access certain routes
-  if (req.session.userId) return next();
-  res.redirect("/signin"); // Redirect to sign-in page if the user is not authenticated
-};
+// --- Importing Middlewares --- //
+const { isAuthenticated, errorHandler } = require("./middlewares");
 
 // --- Importing Controllers --- //
 const { signUpPage, signUp, signInPage, signIn, signOut } = require("./controllers/authController");
@@ -93,12 +89,7 @@ app.get("/bucketList/:id", isAuthenticated, showBucketListItem);
 
 // ---- Error Handling Middleware ---- //
 // Catch all errors and display the error page
-app.use((err, req, res, next) => {
-  console.error(err);
-  res
-    .status(err.status || 500) // Set the status code
-    .render("error", { message: err.message || "Internal Server Error" }); // Render the error page
-});
+app.use(errorHandler);
 
 // ---- Port Configuration ---- //
 const PORT = process.env.PORT || 3000;
