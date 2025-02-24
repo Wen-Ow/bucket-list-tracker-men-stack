@@ -6,11 +6,15 @@
 
 **Images of the Application**
 
-![Snapshot of the ...](/images/Screenshot%20For%20Markdown.jpg)
+![Snapshot of the sign up page](/images/Screenshot%20For%20Markdown.jpg)
 
-![Snapshot of the ...](/images/Screenshot%20For%20Markdown%20of%20Game.jpg)
+![Snapshot of the sign in page](/images/Screenshot%20For%20Markdown%20of%20Game.jpg)
 
-![Snapshot of the ...](/images/Screenshot%20of%20Instructions.jpg)
+![Snapshot of the index page](/images/Screenshot%20of%20Instructions.jpg)
+
+![Snapshot of the create new page]()
+
+![Snapshot of the edit page]()
 
 ## Getting Started Link
 
@@ -64,7 +68,13 @@ This app was created out of a desire to help others turn their aspirations into 
 - MongoDB
 - Mongoose
 - EJS
-- CSS Grid/Flexbox
+- Grid/Flexbox
+- Bcrypt
+- Session-based authentication
+- Express-session
+- Connect-mongo
+- dotenv
+- HTML, CSS, JavaScript
 
 ## Tools Used To Build
 
@@ -78,7 +88,6 @@ This app was created out of a desire to help others turn their aspirations into 
 2. CRUD Operations
 3. Authorization
 4. Basic UX & UI Design
-5. Deployment
 
 ## Backlog Items / Stretch Goal Features
 
@@ -86,9 +95,9 @@ This app was created out of a desire to help others turn their aspirations into 
 
 - **Media and Visual Enhancements:** Upload images or videos for better visualization of bucket list items. Choose custom themes or toggle dark mode for personalized visuals.
 
-- **Social Sharing and Collaboration:** Share bucket list items with friends or on social media. Collaborate on shared bucket list items with friends or teams. Add friends and follow users to see their progress and updates.
+- **Social Sharing and Collaboration:** Share bucket list items with friends or on social media. Collaborate on shared bucket list items with friends or family. Add loved ones and follow users to see their progress and updates.
 
-- **Gamification:** Earn achievements and badges for completing goals. Participate in daily or weekly challenges for motivation.
+- **Gamification:** Earn achievements and badges for completing goals. Participate in daily, weekly, or monthly challenges for motivation.
 
 - **Reminders and Notifications:** Receive reminders for upcoming or overdue goals via email or SMS.
 
