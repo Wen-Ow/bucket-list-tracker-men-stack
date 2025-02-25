@@ -19,7 +19,7 @@
 ## Getting Started Links
 
 ## Deployed Link
-TBD
+https://yololog-bucket-list-app-69c14b67e993.herokuapp.com/signup
 
 ## Trello Planning Board
 https://trello.com/invite/b/67a7761040a0d4cd5ac24af5/ATTI3a7cde722a375a65cfcdd42cad7873ec69FC085C/bucket-list-tracker
