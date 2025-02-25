@@ -99,10 +99,19 @@ This app was created out of a desire to help others turn their aspirations into 
 
 ## Phase 1 MVP Features
 
-1. User Registration & Authentication
-2. CRUD Operations
-3. Authorization
-4. Basic UX & UI Design
+1. As a user I can sign up for a new account to start tracking my bucket list goals.
+
+2. As a user I can log in and out securely to access my personalized bucket list.
+
+3. As a user I can create a new bucket list item with a title, description, and category.
+
+4. As a user I can view all my bucket list items in a consolidated table or dashboard.
+
+5. As a user I can edit an existing bucket list item to updates its details or status.
+
+6. As a user I can delete a bucket list item that I no longer want to track.
+
+7. As a user I can mark a bucket list item as completed and continue to track my progress.
 
 ## ERD Images & DB Structure
 ![Snapshot of ERD Structure](/public/images/Screenshot%20ERD.jpg)
@@ -128,6 +137,9 @@ This app was created out of a desire to help others turn their aspirations into 
 - LinkedIn: https://www.linkedin.com/in/wenow/
 
 ## Attributions / Credit
+
+**Special Mentions: Supporters of the Build**
+* Developers - James Palumbo and Dallas Van Wyk (assistance with deployment). Austin Taylor and Paul Chapman (suggestions and feedback for development). Anna Steckel and Zebastian Rodriguez (for moral support). =)
 
 **Fonts:**
 
