@@ -6,25 +6,25 @@
 
 **Images of the Application**
 
-![Snapshot of the sign up page](/images/Screenshot%20For%20Markdown.jpg)
+![Snapshot of the sign up page](/public/images/Screenshot%20Sign%20Up%20Page.jpg)
 
-![Snapshot of the sign in page](/images/Screenshot%20For%20Markdown%20of%20Game.jpg)
+![Snapshot of the sign in page](/public/images/Screenshot%20Sign%20In%20Page.jpg)
 
-![Snapshot of the index page](/images/Screenshot%20of%20Instructions.jpg)
+![Snapshot of the empty state page](/public/images/Screenshot%20Empty%20State.jpg)
 
-![Snapshot of the create new page]()
+![Snapshot of the add new page](/public/images/Screenshot%20Add%20New%20Page.jpg)
 
-![Snapshot of the edit page]()
+![Snapshot of the index table page](/public/images/Screenshot%20Index%20Table%20Page.jpg)
 
-## Getting Started Link
+## Getting Started Links
 
-**Deployed Link:**
+## Deployed Link
 TBD
 
-**Project Planning Link Using Trello:**
+## Trello Planning Board
 https://trello.com/invite/b/67a7761040a0d4cd5ac24af5/ATTI3a7cde722a375a65cfcdd42cad7873ec69FC085C/bucket-list-tracker
 
-**Wireframes Using Mural:**
+## Mural Wireframes
 https://app.mural.co/t/skylinestackersgame8022/m/skylinestackersgame8022/1739052143404/e08d60a09e570d6ec42e66ab8099f0b652df7e73
 
 ## Description
@@ -32,6 +32,21 @@ https://app.mural.co/t/skylinestackersgame8022/m/skylinestackersgame8022/1739052
 **The YoloLog - Bucket List Tracker App** is designed as a personal goal management tool that empowers users to organize, track, and accomplish their dreams and aspirations. With an intuitive and user-friendly interface, individuals can create, categorize, and update their bucket list items while setting meaningful goals. Whether you aspire to embark on a once-in-a-lifetime adventure, achieve a personal milestone, travel to a new city, or advance in your career, this app provides a structured yet engaging way to manage and visualize progress toward your ambitions.
 
 This app was created out of a desire to help others turn their aspirations into action by providing a centralized platform that fosters motivation, organization, and accountability.
+
+
+## Table of Contents
+* [Deployed Link](#deployed-link)
+* [Trello Planning Board](#trello-planning-board)
+* [Mural Wireframes](#mural-wireframes)
+* [Description](#description)
+* [Objectives](#objectives)
+* [How to Use](#how-to-use)
+* [Technologies Used](#technologies-used)
+* [Tools Used to Build](#tools-used-to-build)
+* [Phase 1 MVP Features](#phase-1-mvp-features)
+* [ERD Images & DB Structure](#erd-images--db-structure)
+* [List of Future Features](#list-of-future-features)
+* [Attributions / Credit](#attributions--credit)
 
 ## Objectives
 
@@ -89,7 +104,13 @@ This app was created out of a desire to help others turn their aspirations into 
 3. Authorization
 4. Basic UX & UI Design
 
-## Backlog Items / Stretch Goal Features
+## ERD Images & DB Structure
+![Snapshot of ERD Structure](/public/images/Screenshot%20ERD.jpg)
+
+![Snapshot of DB Structure](/public/images/Screenshot%20DB.jpg)
+
+
+## List of Future Features
 
 - **Enhanced Goal Tracking:** Set target dates and deadlines for bucket list items. Mark items as completed and track progress with a progress bar or percentage.
 
@@ -102,6 +123,9 @@ This app was created out of a desire to help others turn their aspirations into 
 - **Reminders and Notifications:** Receive reminders for upcoming or overdue goals via email or SMS.
 
 - **Data and Analytics:** Track user activity and provide personalized suggestions or completion statistics.
+
+## <a name="Wen Ow"></a>About The Author
+- LinkedIn: https://www.linkedin.com/in/wenow/
 
 ## Attributions / Credit
 
@@ -154,3 +178,4 @@ This app was created out of a desire to help others turn their aspirations into 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
 
 - https://www.w3schools.com/css/css_tooltip.asp
+
